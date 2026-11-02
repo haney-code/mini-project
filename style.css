@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* GLOBAL RESET - Removes default browser spacing and sets the global font. */
+* {
+  /* Layout */
+  box-sizing: border-box;
+
+  /* Spacing */
+  padding: 0;
+  margin: 0;
+
+  /* Typography */
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+}
+
+/* BODY - Sets the overall page background and default text color. */
+body {
+  /* Appearance */
+  background-color: #edf1f1;
+
+  /* Typography */
+  color: #1a234d;
+}
+
+/* LINKS - Controls default link appearance and text decoration. */
+a {
+  /* Typography */
+  color: #1a234d;
+  font-size: 20px;
+  font-weight: 300;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+/* UNORDERED LIST - Displays list items in a horizontal row. */
+ul {
+  /* Layout */
+  display: flex;
+}
+
+/* LIST ITEMS - Removes bullets and adds left spacing. */
+li {
+  /* Spacing */
+  padding-left: 16px;
+
+  /* Other */
+  list-style-type: none;
+}
+
+/* HEADINGS - Sets default h1 size and centers its content. */
+h1 {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Typography */
+  font-size: 60px;
+}
+
+/* IMAGES - Prevents images from exceeding their container width. */
+img {
+  /* Dimensions */
+  max-width: 100%;
+}
+
+/*
+
+NAVIGATION
+
+*/
+
+/* NAVIGATION - Creates the horizontal navigation bar. */
+nav {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Dimensions */
+  height: 60px;
+
+  /* Spacing */
+  padding: 8px 24px 12px; /* top right bottom left */
+
+  /* Appearance */
+  background-color: white;
+}
+
+/* LOGO CONTAINER - Aligns the logo image and text horizontally. */
+.logo {
+  /* Layout */
+  display: flex;
+  align-items: center;
+
+  /* Spacing */
+  gap: 4px;
+}
+
+/* LOGO IMAGE - Sets the logo image size and top spacing. */
+.logo img {
+  /* Dimensions */
+  width: 40px;
+
+  /* Spacing */
+  margin-top: 4px;
+}
+
+/* LOGO TEXT - Controls the logo's text size and weight. */
+.logo__text {
+  /* Typography */
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/*
+
+HEADER
+
+*/
+
+/* HEADER - Sets the overall width and centers the header. */
+header {
+  /* Dimensions */
+  width: 100%;
+
+  /* Spacing */
+  margin: 0 auto;
+}
+
+/* ROW - Creates a centered, flexible content container. */
+.row {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Spacing */
+  margin: 0 auto;
+  padding-right: 8px;
+}
+
+/* COURSE ROW - Adds a dashed left border to the course area. */
+.row__course {
+  /* Borders */
+  border-left: 1px dashed #cbd5e1;
+}
+
+/* COURSE - Aligns the course icon and text horizontally. */
+.course {
+  /* Layout */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  /* Dimensions */
+  width: 100%;
+
+  /* Spacing */
+  gap: 20px;
+  margin-left: 14px;
+  padding: 8px 0;
+}
+
+/* COURSE ICON - Sets the course emoji size. */
+.course__icon {
+  /* Typography */
+  font-size: 80px;
+}
+
+/* COURSE TEXT - Adds spacing around the course text. */
+.course__text {
+  /* Spacing */
+  padding: 20px;
+}
+
+/* COURSE SELECTION - Styles the small course label. */
+.course__selection {
+  /* Typography */
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  color: #727892;
+}
+
+/* COURSE TITLE - Styles the main course name. */
+.course__title {
+  /* Spacing */
+  margin-left: 32px;
+
+  /* Typography */
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* HERO - Creates the main introductory content container. */
+.hero {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Spacing */
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 40px;
+
+  /* Borders */
+  border: 1.5px solid #cbd5e1;
+  border-right: 20px solid #badcee;
+  border-radius: 0 16px 16px 0;
+
+  /* Appearance */
+  background-color: #fefefe;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO IMAGE - Limits the width of the hero image container. */
+.hero__img--wrapper {
+  /* Dimensions */
+  max-width: 540px;
+}
+
+/* HERO DESCRIPTION - Adds space between the image and text. */
+.hero__desciption {
+  /* Spacing */
+  margin-left: 60px;
+}
+
+/* SUBHEADER - Styles the supporting text beneath the main heading. */
+.subheader {
+  /* Spacing */
+  margin: 16px 0 24px 0;
+
+  /* Typography */
+  font-size: 20px;
+  font-weight: 400;
+  color: #64748b;
+}
+
+/* BUTTON - Controls the general button size, appearance, and cursor. */
+button {
+  /* Dimensions */
+  width: 95%;
+
+  /* Spacing */
+  margin: 0 auto;
+  padding: 8px 16px;
+
+  /* Borders */
+  border-radius: 10px;
+
+  /* Appearance */
+  background-color: #c231c2;
+
+  /* Typography */
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: white;
+
+  /* Other */
+  cursor: pointer;
+}
+
+/*
+
+ABOUT - SOCIAL - CONTACT
+
+*/
+
+/* MAIN SECTIONS - Sets the width and spacing of the three sections. */
+#about,
+#social,
+#contact {
+  /* Dimensions */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Spacing */
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+/* SECTION CARD - Creates the main flexible section container. */
+.section__card {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Spacing */
+  padding: 40px 20px;
+
+  /* Borders */
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 0 16px 16px 0;
+}
+
+/* ABOUT CARD - Sets the About section background and right border. */
+.section__card--about {
+  /* Borders */
+  border-right: 20px solid #badcee;
+
+  /* Appearance */
+  background-color: #ffeaaf;
+}
+
+/* SOCIAL CARD - Sets the Social section background and right border. */
+.section__card--social {
+  /* Borders */
+  border-right: 20px solid #ef4810;
+
+  /* Appearance */
+  background-color: #badcee;
+}
+
+/* SECTION DESCRIPTION - Aligns the description and image horizontally. */
+.section__description {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ABOUT, SOCIAL AND CONTACT ROWS - Aligns section content to the left. */
+.about__row,
+.social,
+.contact__row {
+  /* Layout */
+  justify-content: start;
+}
+
+/* SECTION TITLE - Styles section headings with letter spacing. */
+.section__title {
+  /* Spacing */
+  margin-bottom: 16px;
+
+  /* Typography */
+  font-family: "Space Mono", monospace;
+  letter-spacing: 8px;
+}
+
+/* SECTION IMAGE - Controls the maximum image width and spacing. */
+.section__img--wrapper {
+  /* Dimensions */
+  max-width: 540px;
+
+  /* Spacing */
+  padding: 0 24px;
+}
+
+/* SECTION DESCRIPTION WRAPPER - Controls the description width and spacing. */
+.section__description--wrapper {
+  /* Dimensions */
+  width: 70%;
+
+  /* Spacing */
+  padding: 0 24px;
+}
+
+/* SECTION PARAGRAPH - Controls paragraph spacing and readability. */
+.section__desciption--para {
+  /* Spacing */
+  margin-bottom: 24px;
+
+  /* Typography */
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/*
+
+CONTACT
+
+*/
+
+/* CONTACT CARD - Styles the contact section container. */
+.section__card--contact {
+  /* Dimensions */
+  width: 96%;
+
+  /* Borders */
+  border: 1.5px dashed #c231c2;
+  border-radius: 16px;
+
+  /* Appearance */
+  background-color: #badcee;
+}
+
+/* CONTACT FORM - Creates a centered, vertical form layout. */
+form {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 900px;
+
+  /* Spacing */
+  margin: 0 auto;
+  padding: 0 24px;
+  gap: 12px;
+}
+
+/* FORM FIELDS - Styles the email input and message box. */
+input,
+textarea {
+  /* Dimensions */
+  width: 500px;
+
+  /* Spacing */
+  margin-bottom: 24px;
+  padding: 6px 12px;
+
+  /* Borders */
+  border-radius: 6px;
+
+  /* Typography */
+  font-size: 20px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+/* FOOTER - Creates the centered footer container and layout. */
+footer {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Dimensions */
+  width: 100%;
+  max-width: 1200px;
+
+  /* Spacing */
+  margin: 0 auto;
+  padding: 12px 20px;
+
+  /* Borders */
+  border-top: 1.5px dashed #cbd5e1;
+  border-radius: 20% 20% 0 0;
+
+  /* Appearance */
+  background-color: #badcee;
+}
+
+/* FOOTER LOGO - Adds space beneath the footer logo. */
+.footer__logo {
+  /* Spacing */
+  margin-bottom: 8px;
+}
+
+/* FOOTER LINKS - Adds space beneath the footer navigation. */
+.footer__links {
+  /* Spacing */
+  margin-bottom: 16px;
+}
+
+/* FOOTER LINK ITEMS - Adds horizontal spacing around footer links. */
+.footer__links a {
+  /* Spacing */
+  padding: 0 16px;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+
+/*
+
+SMALL TABLETS
+
+*/
+
+/* TABLET (Screen width <= 1024px) */
+@media (max-width: 1024px) {
+  /* SECTION PARAGRAPHS - Reduces paragraph text size on tablets. */
+  .section__desciption--para {
+    font-size: 20px;
+  }
+}
+
+/*
+
+MOBILE DEVICES
+
+*/
+
+/* SMALL SCREENS (Screen width <= 768px) */
+@media (max-width: 768px) {
+  /* LINKS - Reduces navigation link text size. */
+  a {
+    font-size: 16px;
+  }
+
+  /* COURSE - Reduces spacing between the course icon and text. */
+  .course {
+    gap: 4px;
+  }
+
+  /* COURSE TITLE - Removes left spacing and reduces title size. */
+  .course__title {
+    margin-left: 0;
+    font-size: 40px;
+  }
+
+  /* HERO - Stacks the hero image and description vertically. */
+  .hero {
+    flex-direction: column;
+  }
+
+  /* HERO IMAGE - Adjusts the image width for smaller screens. */
+  .hero__img--wrapper {
+    max-width: 500px;
+  }
+
+  /* HERO DESCRIPTION - Removes unnecessary left spacing. */
+  .hero__desciption {
+    margin-left: 0;
+  }
+
+  /* HEADINGS - Reduces heading size on smaller screens. */
+  h1 {
+    font-size: 40px;
+  }
+
+  /* SECTION DESCRIPTION - Stacks images and text vertically. */
+  .section__description {
+    flex-direction: column;
+  }
+
+  /* SECTION TEXT - Uses the full available width. */
+  .section__description--wrapper {
+    width: 100%;
+  }
+
+  /* FORM FIELDS - Reduces input and textarea widths. */
+  input,
+  textarea {
+    width: 100%;
+  }
+}
